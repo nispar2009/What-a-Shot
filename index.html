@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play &middot; What-a-Shot!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://nispar2009.github.io/spectrum-stylr-beta/light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body id="frame" onclick="tap()">
+    <img src="anim/match/stance.png" alt="player" id="bg">
+    <img src="anim/misc/ball.png" alt="O" id="ball">
+    <button class="btn-retry btn" onclick="window.location.reload()" id="retry">&orarr;</button>
+    <div class="hover-all">
+        <button class="btn btn-info">?</button>
+        <div class="hover-content">
+            Click anywhere on the screen once to use footwork, and click a second time to hit.
+            Based on your timing, the game will decide whether it's a six, four, two runs, or wicket.
+            But be careful! 5 wickets in a row means you'll lose all your runs!
+            <a href="stats.html" class="link">View stats.</a>
+        </div>
+    </div>
+
+    <script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change bat &middot; What-a-Shot!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://nispar2009.github.io/spectrum-stylr-beta/light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="anim/misc/pavilion.png" alt="player" id="bg">
+    <div id="stats">
+        <img class="bat-select" onclick="setValue('select', 'Stoneriders (SS)'); localStorage.setItem('bat', 'ss')"
+            src="anim/bats/ss.png" alt="Stoneriders (SS)">
+        <img class="bat-select" onclick="setValue('select', 'Game and More (GM)'); localStorage.setItem('bat', 'gm')"
+            src="anim/bats/gm.png" alt="Game and More (GM)">
+        <img class="bat-select" onclick="setValue('select', 'Grey Nickels'); localStorage.setItem('bat', 'greyNickels')"
+            src="anim/bats/greyNickels.png" alt="Grey Nickels">
+        <img class="bat-select"
+            onclick="setValue('select', 'Cuckooburrow'); localStorage.setItem('bat', 'cuckooBurrow')"
+            src="anim/bats/cuckooBurrow.png" alt="Cuckooburrow">
+        <p id="select"></p>
+    </div>
+    <button class="btn-info btn-play btn" onclick="redirect('index.html')">Play</button>
+
+    <script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
