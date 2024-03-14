@@ -14,8 +14,8 @@ img#bg {
 button.btn.btn-retry {
     display: none;
     bottom: 10px;
-    width: 5%;
-    left: 47.5%;
+    width: 10%;
+    left: 45%;
     position: absolute;
     height: 10%;
     border-radius: 10px;
@@ -83,7 +83,7 @@ body {
     height: 50%;
     width: 50%;
     left: 25%;
-    top: 25%;
+    top: 20%;
     text-align: center;
 }
 
