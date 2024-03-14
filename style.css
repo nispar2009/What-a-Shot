@@ -43,7 +43,7 @@ body {
 .hover-all {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 50px;
 }
 
 .hover-all .btn.btn-info {
