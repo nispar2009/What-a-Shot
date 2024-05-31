@@ -112,3 +112,18 @@ button.btn.btn-info.btn-play {
     width: 10%;
     left: 45%;
 }
+
+#shot-ball {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 62.5%;
+    transition-property: left, top;
+}
+
+#cred {
+    text-align: right;
+    position: relative;
+    bottom: 0;
+
+}

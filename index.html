@@ -14,8 +14,9 @@
 </head>
 
 <body id="frame" onclick="tap()">
-    <img src="anim/match/stance.png" alt="player" id="bg">
+    <img src="anim/match/stance.png" draggable="false" alt="player" id="bg">
     <img src="anim/misc/ball.png" alt="O" id="ball">
+    <img src="anim/misc/ball.png" alt="O" id="shot-ball">
     <button class="btn-retry btn" onclick="window.location.reload()" id="retry">&orarr;</button>
     <div class="hover-all">
         <button class="btn btn-info">?</button>
@@ -23,7 +24,11 @@
             Click anywhere on the screen once to use footwork, and click a second time to hit.
             Based on your timing, the game will decide whether it's a six, four, two runs, or wicket.
             But be careful! 5 wickets in a row means you'll lose all your runs!
-            <a href="stats.html" class="link">View stats.</a>
+            Click <a href="stats.html" class="link">here</a> to view stats.
+            <hr>
+            <div id="cred">
+                &mdash; a project by <a href="https://nispar2009.github.io" class="link">nispar2009</a>
+            </div>
         </div>
     </div>
 
