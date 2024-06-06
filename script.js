@@ -1,5 +1,31 @@
 let count = 0
 
+let awards = []
+
+if (parseInt(localStorage.getItem("runs")) >= 50) {
+    awards.push("Half century: 50+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 100) {
+    awards.push("Century: 100+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 500) {
+    awards.push("Hard hitter: 500+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 1000) {
+    awards.push("4-digit: 1000+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 5000) {
+    awards.push("Cream of the corn: 5000+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 10000) {
+    awards.push("Ultimate: 10000+ runs")
+}
+if (parseInt(localStorage.getItem("runs")) >= 34358) {
+    awards.push("World record: 34357+ runs")
+}
+
+localStorage.setItem("awards", awards.toString())
+
 if (Object.keys(localStorage).includes("runs") == false) {
     localStorage.setItem("runs", "0")
     localStorage.setItem("bat", "ss")
@@ -9,9 +35,11 @@ if (Object.keys(localStorage).includes("runs") == false) {
 try {
     setValue("runs", `${localStorage.getItem("runs")}`)
     document.getElementById("bat").src = `anim/bats/${localStorage.getItem("bat")}.png`
-} catch {
-    console.log("Err")
-}
+
+    for (const iterator of localStorage.getItem("awards").split(",")) {
+        document.getElementById("awards").innerHTML += `<div class="award">${iterator}</div>`
+    }
+} catch { }
 
 hit = () => {
     console.log(count)
